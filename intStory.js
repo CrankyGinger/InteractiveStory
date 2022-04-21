@@ -116,7 +116,7 @@ window.onload = function(){
     var restart = document.getElementById("restart");
     var textArea = document.getElementById("textArea");
     var btnArea = document.getElementById("btnArea");
-    var githubLink = document.getElementById("link");
+    var repolink = document.getElementById("githubLink");
     var profile1 = document.getElementById("profile1");
     var profile2 = document.getElementById("profile2");
      
@@ -161,7 +161,7 @@ window.onload = function(){
     });
      
      
-    githubLink.addEventListener("click", function(){
+    repolink.addEventListener("click", function(){
         alert("You are leaving this site!")
     });
      
@@ -174,5 +174,3 @@ window.onload = function(){
     });
      
     }
-    
-    
