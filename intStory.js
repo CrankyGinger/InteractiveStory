@@ -22,7 +22,7 @@ window.onload = function(){
     },
      
     goThrough : {
-      text: "He knows that if he has any chances at successfully completing this task within NYC, he's gonna need to learn a lot about what it looks like over there. He decides to give Brian, an old friend from his time back in the Marines, a call. The two speak on the phone for hours, catching up and bringing up old memories. “Remember when we had to ambush that convoy and take their supplies?” asks Brian “Yea, Remember how we had to drag Andrew out of a ditch he got stuck in?” says Jack. They continue to reminisce about how without them, their battalion wouldn’t have lasted a week. Eventually Jack asks Brian “So, do you know anything about this zombie thing in NYC?” Brian replies “Oh yea man, there's enough zombies in that place to cover the street 3 times over.”",
+      text: "He knows that if he has any chances at successfully completing this task within NYC, he's gonna need to learn a lot about what it looks like over there. He decides to give Brian, an old friend from his time back in the Marines, a call. The two speak on the phone for hours, catching up and bringing up old memories. “Remember when we had to ambush that convoy and take their supplies?” asks Brian “Yea, Remember how we had to drag Andrew out of a ditch he got stuck in?” says Jack. They continue to reminisce about how without them, their battalion wouldn\'t have lasted a week. Eventually Jack asks Brian “So, do you know anything about this zombie thing in NYC?” Brian replies “Oh yea man, there's enough zombies in that place to cover the street 3 times over.”",
       options: [['fullyCommit', 'Fully commit to the mission'], ['seeImp','See whats so important in NYC']]
     },
      
@@ -87,8 +87,140 @@ window.onload = function(){
      
     ignKeepGoHome: {
       text:"Jack reaches safety, crossing through the city lines and reaching human civilization once again. “Alright, I gotta get this thing to Jebediah, and then get home to Stacy.” he says aloud speaking to himself. Jack gets in his car and gets on the road, headed to Jebediah. When he reaches Jebediah, he hands it to him, “Here it is boss” he says, “Thank you, Jack” Jebediah says, as he remains in his chair unchanged. “Right. Alright, the money is in your account. Good work, boy.” Jack says nothing in response, staring Jebediah in the eyes, and then promptly leaves. “Time to go home” he tells himself. After countless hours on the road, he finally gets back home, and is overjoyed to see Stacy again “Welcome back!” she says happily. “So, how was it?” “It was a hellhole, everything that used to be there is just rubble now, and the zombies. Seeing those people\'s bodies become a soulless body walking around is the worst feeling I've ever had.” “Jesus” She says shocked in response. They continue to converse about his experience, and then Jack walks upstairs, jumps on the bed and enjoys a well earned rest."
-    }
+    },
+
+    invGun: {
+      text: "Jack decides that he should move in the direction of the gunshots, “gunshots mean survivors*/s he says to himself. The idea of there being people who have been hiding in this hell hole for however long it's been since the virus broke out in NYC. As Jack is moving in the direction of the shots, the time in between shots keeps getting smaller and smaller. “Somethings happening” Jack mutters through his lips. Jack finally reaches the area the shots are coming from and realizes something, those people are at the top of the empire state building. Ascending this building is going to take a long time, and he doesn\'t know how many of the undead could be inside the building, or if the staircase is intact anymore; Jack would essentially be heading in completely blind. ",
+      options: [['Ascend', 'Ascend the building'], ['noAscend', "Don't ascend the building"]]
+    },
+
+    noAscend: {
+      text: "Jack decides that he will not ascend the building, as he doesn\'t know anything about the situation inside the building, and going up the 102 story building could take a full day. Grugg decides to divert his focus back to the mission. ",
+      options: [['ignMov', 'Enter the building']]
+    },
+    
+    Ascend: {
+      text: "Jack decides to ascend the behemoth of a building even though it is a huge risk to the mission and his life. Making this decision jeopardizes the objective of the mission, but the thought of there being survivors is more than enough to motivate him. To his surprise, the building is completely clear, every floor Jack has reached has been completely clear of any threats. This, however, is not the case when he reaches the last 2 floors of the building. He could see from below on the stairwell dozens of zombies on the stairs above him trying to breach a door, but to no avail as the door was made of a thick titanium material. Jack sneaks up behind them, lines up the undead brain munchers and slaughters them. Every. Single. One. They all fall down the stairs, laying at Jack's feet.",
+      options:[['talkToSrvrs','Talk to the survivors']]
+    },
+
+    talkToSrvrs: {
+      text:"He climbs the stairwell, avoiding stepping on top of the corpses and knocks on the 2 inch thick titanium door. After a few minutes, there was no response from the other side, “Hello, is anyone alive in there?” asks Jack, again no response. “I don\'t want to hurt you, I just wanna see if you\'re alright” Jack says honestly “Alright, I\'m gonna open this door, if you try anything I\'ll blow your brains sky high!” says a stranger who sounds hostile, but also desperate. As the door opens, he sees three people huddled together with their guns aimed at Jack's face “Who are you and why are you here?” asks the same man, “I heard gunshots when I was walking through the street and came over here to check for survivors” \'No, why are you in NYC? It's infested with those walkers” ''Walkers?” “Yea, those undead scoundrels walking around like they own the place.” “Well they do own the place.” Jack looks from one side of the room to another, scanning his environment, he sees that they are running low on ammo, based on how empty the ammo boxes look. They\'re also extremely low on food, Jack deduces after looking at the few cans of cut up fruit they have left. “I\'m on a mission to retrieve an item from the Morgan Library” The group to say the least was confused, but they started whispering to each other about the situation and said to Jack, 'We want to come with you'",
+      options:[['bringGroup','Bring the group with you']]
+    },
+
+    bringGroup: {
+      text: "Jack agrees to bring them with him on the mission, “Alright, i\'ll bring you guys along, but in that case we should know each other's names” “Good Idea” replies the man. “I\'m Jack, it's nice to meet you guys” “I\'m Rick, this is Diane, and that's Jimbob” “Alright, we should gather all the supplies we have and get moving”. The group descends the ginormous building slowly, making sure to clear each floor and gather as much supplies as they can possibly find. After about an hour they finally exit the building, and begin moving towards the Morgan building. Along the path, they see absolutely no zombies, none anywhere. “Where are all the walkers?” “I don\'t know man, but to tell you the truth i\'m not liking this.” “Maybe they got distracted by something” it turns out something must have happened, because when they were closing in on the library, it seemed like every zombie was there. “Alright, we need a plan. Without a plan, we aren\'t getting in that building” Jack tells the group. “Do you guys have any combat experience prior to NYC?” “We were all in the same division within the army” Using their combined experience with combat, they manage to form a strategy to execute the massive public zombie gathering. After clearing the undead, they enter the building and make their way towards the objective.",
+      options:[['pickup','Pick up the item']]
+    },
+
+    pickup: {
+      text:"Jack picks up the item, and the group slowly realizes what it is. “Just exactly who are you working for pal?” asks Jim Bob, “a very powerful Amish man” replies Jack. “Amish? Do you have any idea what an Amish person is?” “This Amish man wants you to retrieve this? What the hell for?” The group stood silent for a while, and then Jack decided that he needed to make a decision. Does he get rid of this item or keep it and continue with the mission? It's the virus that started the zombie virus in the first place - it could do a lot of damage, but there is also the chance that it could cure the infected. ",
+      options:[['invKeep',"Keep the item"],['invDisp',"Dispose of the item"]]
+    },
+
+    invKeep: {
+      text:"Jack makes the decision to keep the virus and put it in his backpack. They make their way out of the building, walking through the mess left by their previous battle. “What now” “Now we leave this godforsaken city and live our lives” says Jack “but i\'ve never left this city, its all ive ever known” Diane replies sadly “anything is better than this shithole we\'re currently in, even if you feel alienated.” Jimbob responds “Alright, we need to go through the Lincoln tunnel, it's our fastest way out of here” commands jack. They all agree with him, every other exit out of NYC is too far away, and they don't have enough supplies to go anywhere else. They make their way to the tunnel, keeping quiet to attract as little attention as possible, but as they get closer they realize something that they had all feared. A mob had formed just before the tunnel entrance, effectively forming a barrice, preventing anyone or anything getting through to the other side. Unfortunately they all knew the same thing - they do not have enough ammo to eliminate this huge throng of zombies, someone needs to do something.",
+      options: [['invDistAlone',"Distract the horde alone"], ['invGroupDist', 'The group distracts the horde']]
+    },
+
+    invDistAlone: {
+      text:"“Alright, I'm gonna distract these zombies from you guys with flares. When they follow me, high tail it outta here and get to Jersey. Don't wait for me either, just go live your lives” Jack tells the group as they\'re all huddled together “But you have the item with you”  ''I know, i\'ll be fine, just go”. Jack moves towards the group and lights a flare, and then begins to scream random sounds to get their attention. “I don't know what the hell he\'s saying, but it\'s working,” says Jimbob. The 3 survivors run as fast as they can towards the entrance of the tunnel, and Jack continues to bring the hordes' attention to him and the flares he has lighted. But, as he is running he sees zombies from in front of him and both sides racing towards him, as he looks around he realizes there is nowhere for him to go. Jack decides to go into a nearby building and use what little ammo and supplies he has left to fend off the undead for as long as possible. Then, just as he is on his last magazine of ammunition he hears something, a sound he has not heard in a very long time. The sound is that of a helicopter, and just as the sound gets louder he hears the fire of multiple guns, and he sees the zombies standing right in front of him torn apart by a swarm of ammunition. After the onslaught is over, the helicopter lands and picks up Jack, “who sent you guys?” Jack asks the helicopter crew, the co-pilot responds with “We saw your flares when we were flying around the edge of Jersey and decided to check it out, then heard your shots and decided we\'d come help.” “Well I'll tell you this, I'm damn glad you guys came.”",
+      options:[['invGiv', 'Give the item to Jebediah']]
+    },
+
+    invGiv: {
+      text:"After Jack was dropped off at his car outside of NYC, he drives to meet Jebediah at his company's main office. As he arrives, he begins to think of all the things that he can possibly do with the $50 million he will be receiving. “I’m gonna make us debt-free,” he says to himself. Jack enters Jebediah’s office and hands him the virus vial, and says “Here she is boss” confidently, Jebediah skeptically says “yes, here ‘she’ is, Jack”. Jebediah’s face was as straight as it could be, causing Jack to be a little freaked out, and questioning if he should have really given him the virus. “The $50 million dollars has been transferred to your bank account, good riddance.” Jebediah swifty exclaimed. As Jack leaves the building and heads home, he continues to question Jebediah, internally imagining the worst outcomes, but he just keeps on going. Like he always has, just keep on moving with life. Jack finally returns home, and his wife can see that he is ecstatic, given the fact he is smiling from one cheek to the other. “I take it by that look, we have $50 million dollars?” she asks him. “We have $50 million dollars” Jack responds happily. Although Jack is now a wealthy man, he has also grown as a man, beginning to value the importance of human life a little more, the zombies he saw in NYC made him realize just how fragile people really are. One day, something could happen that puts an end to everything people have worked towards in an instant. ",
+    },
+
+    invGroupDist:{
+      text:"“Ok Jack, we’re gonna work to distract the zombies so you can get outta here back to your wife.” “Ok, remember the second you see an opening you take it, we don’t know how many zombies there might be on their way here.” The group works to set off car alarms and make as much noise as they can, grabbing the attention of every zombie near them, meanwhile Jack is moving towards the tunnel. As Jack makes it to the other side of the tunnel, he makes it to Jersey and waits for the survivors, but they never show, after 3 days of waiting nobody comes, and Jack realizes they must have been caught, but at least they’re not in that hell hole anymore. ",
+      options:[['invFindCar','Find the car']]
+    },
+    
+    invFindCar:{
+      text:"Jack finds his car and makes it towards Jebediah’s main company office. On his way there, Jack begins to feel guilty, telling himself that he should have gone back and looked for them “I just let them die.” Jack painfully screams out loud in his car. Jack’s experience in NYC has completely tarnished his soul, and all he wants is just to go home to Stacy. “I can’t go home yet though, I need that money more than anything right now.” Jack finally reaches the office and approaches Jebediah, “Here” he says filled with anger and frustration. “Thank you, Mr. Grugg,” Jebediah says smuggly. Jack doesn’t say a word to Jebediah, it's obvious that he is not well and has some things he needs to say. This however is not the time nor the place to do such a thing. “The money is in your account” Jebediah relays to Jack. “Thank you,” he says.  Jack swifty leaves the building and makes his way to his car. As Jack is driving back to his home he can’t stop thinking about how he got those 3 people killed. “They had family, they had lives to live, and I used them so that I wouldn't die” he cries aloud. As he gets home, Jack looks like he has seen the worst thing imaginable, “What’s wrong” Stacy worryingly asks him, “I could have saved them Stacy, but instead I used them to get out of there.”. Jack doesn't say another word, heading to the bedroom and enjoys a well deserved rest.",
+    },
+
+    invDisp: {
+      text:"After getting rid of it, they leave the building and move forwards to leave the unfortunate remnant of a city they find themselves in. They see that there is an absolutely astonishing amount of zombies on their path  out of the city. As they get closer to the tunnel, they see that a giant group of flesh-eaters are following them and realize there is no way they’ll be able to outrun them. The group quickly makes a plan and makes use of a flare from Jack's backpack and a spare pipebomb from Rick’s pack. Luckily, it works perfectly and they escape and keep moving towards the tunnel out of the city. As they get closer to the exit they hear undead screeching behind them and see that another horde is coming for them “Do we have enough supplies to take on this horde?” Diane asks worryingly “I’m not sure, but we don’t have much of a choice. We need to make a distraction, we don’t have the supplies to fight them.” ",
+      options:[['invDispJack','Distract the horde'],['invDispGroup','The group distracts the horde']]
+    },
      
+    invDispJack: {
+      text:"“Alright, I'm gonna distract these zombies from you guys with flares. When they follow me, high tail it outta here and get to Jersey. Don't wait for me either, just go live your lives” Jack tells the group as they’re all huddled together “But you have the item with you”  ''I know, i’ll be fine, just go”. Jack moves towards the group and lights a flare, and then begins to scream random sounds to get their attention. “I don't know what the hell he’s saying, but it’s working,” says Jimbob. The 3 survivors run as fast as they can towards the entrance of the tunnel, and Jack continues to bring the hordes' attention to him and the flares he has lighted. But, as he is running he sees zombies from in front of him and both sides racing towards him, as he looks around he realizes there is nowhere for him to go. Jack decides to go into a nearby building and use what little ammo and supplies he has left to fend off the undead for as long as possible. Then, just as he is on his last magazine of ammunition he hears something, a sound he has not heard in a very long time. The sound is that of a helicopter, and just as the sound gets louder he hears the fire of multiple guns, and he sees the zombies standing right in front of him torn apart by a swarm of ammunition. After the onslaught is over, the helicopter lands and picks up Jack, “who sent you guys?” Jack asks the helicopter crew, the co-pilot responds with “We saw your flares when we were flying around the edge of Jersey and decided to check it out, then heard your shots and decided we’d come help.” “Well I'll tell you this, I'm damn glad you guys came.”",
+      options: [['invDispCar','Go the the car']]
+    },
+
+    invDispCar:{
+      text:"Jack goes to his car and makes his way to his home in California. Whilst on his way, he calls Jebediah “Well, I went to the place you said and there wasn’t anything there. No virus or vial like you said there would be” ''I swear to god, If ye’re lying to me I will make you harvest my crops for the rest of eternity.” Jack, confused but also a little amused by his response tries to muffle a laugh but doesn’t do a great job, “You better not be laughing at me you dirty peasant.” “Look Jebediah, I am telling you that there was nothing there” “Fine, whatever” Jebediah angrily responds and slams the phone on the table, ending the call. Jack considered telling him the truth, but he knew that if he did that he would be in some real trouble. Jack eventually returns home with no money, but he doesn’t care too much, as he saved some people and possibly prevented another outbreak. “You didn’t get any money, but do you seem happy?” “I saved people who were still in NYC who needed help.” “There were people still there?” “Yea a few people from the army were in the Empire State building for god knows how long.” “What?” she asks as she is extremely confused. “Look, Can we talk about this later? I’m exhausted.”",
+    },       //End of the 'Accept' branch of the story, following text will be for the 'Decline' branch.
+
+    confront: {
+      text:'Jack starts thinking and decides to go to the attic and get his old military gear, it included an M16 assault rifle and ammunition. While Jack is doing this he decides to contact a colleague to see if he can track the phone number of the unknown caller. 10 minutes passed, and Jack received the location of the unknown caller. He runs to his truck, and starts heading towards the location he received. He enters the building and takes hostage a secretary who was at the entrance of the place, he obligates him to take him to his boss, the secretary takes him to his boss office. Leaving 13 security guards dead throughout the way, Jack arrives at the office, he finds his wife tied to a chair and there was a man on her side. Jack asks the person on her side "Who are you?. I already told you I don\'t want to do the mission."To which the boss replies, "I\'m the owner of this organization, my name is Jebediah."  To which the boss replies, "I\'m the owner of this organization, my name is Jebediah." An organization tactical team is arriving at the office as Jack talks to the boss, the tactic team shoots him in the shoulder and leg. Jack is forced to take cover while the tactic team takes their boss away, leaving Jack\'s wife in the office. Jack unties his wife, then they leave the building and go home so that Jack can start getting medical treatment.',
+      options:[['stillDecline',"Decline the offer once again"],['giveIn','Accept Jebediah\'s offer']]
+    },
+
+    stillDecline:{
+      text:"Jack decides to forget all about this and go live a normal life. Because of his decision to not retrieve the item, the world descends into chaos.",
+    },
+
+    giveIn:{
+      text:"Jack arrives home, for his wife to remove the bullets from his body and start his recovery, Jack refuses to start his rehabilitation because he wants to look for Jebediah, he very much wants to finish Jebediah, Jack gets up from the chair, gave a few steps and his leg began to hurt too much for which he is forced to not continue with his idea, it has been 1 year since the day he faced Jebediah. Jack is in a very bad economic situation, he had to pay thousands of dollars to be able to walk again. He and his wife had to talk to find a solution, and they came to the conclusion that the best way to get out of debt is if he accepts the mission that Jebediah offered him. Jack contacts Jebediah and tells him that he accepts the mission.",
+      options:[['call','Call up an old friend']]
+    },
+
+    call: {
+      text:'Jack receives the information about the mission, he is informed that he has to go to a laboratory which is in the center of NYC and get the virus vial and bring it to the organization, he is also informed that despite many animals died when The outbreak of the virus began, but some of the animals became zombies and are larger than the average size of their species. With all the information received about the mission, Jack contacts an old friend to help him come up with a plan.Jack and his friend are in his living room talking about the mission. His friend informs him that the safest and fastest way to complete the mission would be to be dropped off at NYC Bay and picked up there, his friend also tells him "I heard rumors that there are zombies that run as a normal person. There’s also zombies who are smarter than the others.” The two analyzed the plan, made calculations and the result they obtained was a 35% success rate.',
+      options:[['keepGoing','Keep on going'],['backOff', "Go home"]]
+    },
+
+    backOff: {
+      text:"Jack backs down and decides better not to continue with the mission since there is a very high probability that he will not return home alive.Because of his decision to not retrieve the item, the world descends into chaos"
+    },
+
+    keepGoing: {
+      text:"3 days have passed since the day Jack saw his friend Brian to build a plan. Jack is now in the bay of NYC with his other 2 companions who were assigned to the mission, the first day Jack found zombie dogs that are 1.5 meters tall next to zombie bears with a height of 3 meters. Unfortunately, Jack's companions died on the 4th day of the mission, they died when they were cornered by 5 zombie wolves while one of them was doing surveillance, the other companion tried to help but was attacked by another wolf. Jack realizing that the two were dead, he decided better to hide in a room to wait for the wolves to leave. It's the sixth day and Jack now finds himself just 13 blocks away from the lab. Jack feels weird since he hasn't seen a zombie in over an 1 hour of walking through the streets. After he had been walking for an hour and a half, Jack looks into the distance, to see a horde of zombies in a circle as if they were huddled together.",
+      options:[['invHorde','Jack decides to investigate the horde'],['ignHorde','Jack decides to ignore the horde']]
+    },
+
+    invHorde: {
+      text:"Jack, after seeing the huge horde of zombies off in the distance decides to investigate the horde. As Jack got closer to the horde, he heard something behind him, and when he looked he saw a zombified dog chasing him. The main group of zombies heard Jack approaching them and started to chase him. Jack managed to survive for a while, using the ammo he had, but eventually he was overrun by the dogs and torn to shreds."
+    },
+
+    ignHorde: {
+      text:"Jack decides to not investigate the horde he saw off in the distance, 'I need to focus' he says to himself. He resumes his path to find the item for Jebediah, but as he is getting closer to the building, he begins to see signs of human life. ",
+      options:[['invLife','Investigate the signs of life']]
+    },
+
+    invLife: {
+      text:"Jack decides to start heading towards the building, as he starts getting closer and closer he starts seeing dead bodies of zombies. Jack decides to go into the 10-meter-high house from which smoke was coming out of the chimney, and upon entering he finds 5 soldiers who apparently had been sent by the government to extract biological information from the zombie virus to try to generate vaccines. Jack asks them why they are still in town to which they reply that the day before their extraction chopper was shot down by zombie dogs, which killed 5 soldiers, 2 pilots, and 3 teammates, they also mentioned staying behind. Without communication with the military base, Jack decides to ask them for help with his mission, which they accept. Jack gets to the lab on the sixth day during night time, as he sees many zombies in the north side and the enormous size of the building he starts to doubt the ability to complete the mission when he sees the facility.",
+      options:[['dontAbnd','Keep going'],['abndMission','Abandon the mission']]
+    },
+
+    abndMission: {
+      text: "Jack decides to abandon the mission as he sees many zombies, and eventually finds it impossible to penetrate the zombies, and escapes to safety with his team members."
+    },
+
+    dontAbnd: {
+      text: "Jack decides to form a plan using his experience gained from the special forces. He decides to form a plan to eliminate the zombies, and his companions decide to do another plan. They ended up having two plans. The first plan is to go through the South side and the second plan is to go through the West side. Now is the time for Jack to make a decision",
+      options:[['west','The group decides to enter through the West entrance'],['south','The group decides to enter through the west entrance']]
+    },
+
+    west: {
+      text: "Jack decides to go on the west side of the resort, upon arriving there he repents as he meets a pack of zombies. The group of zombies run straight towards them, but a group of zombies is behind them, attacking them from the flank. Combined, zombies over power them. Jack and his motley crew of people die a slow, painful death. "
+    },
+
+    south: {
+      text: "Jack decides to enter the facility through the south side; they find only 20 zombies in the south side. Jack decides to form 2 teams, one will stay at the entrance to eliminate any zombies trying to enter the facility, and the other team will look at every room in the facility till they find the Vial Virus. After 43 minutes of looking into different rooms they finally were able to find the Virus.",
+      options:[['leaveWest','the group decides to leave the building through the West side']]
+    },
+
+    leaveWest: {
+      text:"They chose to escape from the facility using the west side, as they were approaching the exit, they started seeing a horde of zombies heading towards the west side, Jack decided to go get a car so they could escape, otherwise zombies would just keep coming due to the shooting noises.",
+      options: [['']]
+    }
+
     };
      
      
