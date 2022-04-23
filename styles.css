@@ -37,8 +37,10 @@ h1{
     margin-left: 50%;
     margin-right: 50%;
     margin-bottom: 10px;
-    font-size: x-large;
-    width: fit-content;
+    font-size: xx-large;
+    height: 55px;
+    width: 100px;
+    
     box-shadow: black 1px 1px 1px;
     transition: all 0.7s ease;
 }
