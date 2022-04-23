@@ -218,9 +218,121 @@ window.onload = function(){
 
     leaveWest: {
       text:"They chose to escape from the facility using the west side, as they were approaching the exit, they started seeing a horde of zombies heading towards the west side, Jack decided to go get a car so they could escape, otherwise zombies would just keep coming due to the shooting noises.",
-      options: [['']]
-    }
+      options: [['stealth','Leave quietly'],['gunsBlaze','Leave the building guns blazing']]
+    },
 
+    gunsBlaze: {
+      text:"Once Jack found a car that would be big enough for the group, he started hot-wiring the car. The group defended Jack, killing dozens of zombies whilst Jack was getting the car working.",
+      options:[['leaveNYC','Drive to the edge of the city']]
+    },
+
+    leaveNYC: {
+      options: "The group went as far as they could possibly go, 40 minutes passed until the car ran out of gas. They got out of the car and decided to find a building where they could spend the night. Two members of the group were taking care of the group, while the others were sleeping. One of the soldiers decided to smoke a cigarette outside the building, while he was talking with his partner, he decided to sit on the car’s hood. When he sat down on the hood, the alarm started beeping. Instead of panicking, the two of them decided to wake up the rest of the group, so that they could leave the area before they would be swarmed. But, this was to no avail, as when the group left the building, they were greeted by seemingly hundreds of zombies. Despite their best efforts to fend off the zombies, they were overrun, and died a gruesome, slow death."
+    },
+
+    stealth: {
+      text: "As they were seeing an incredible amount of zombies getting closer and closer to the west side, the 5 team members without Jack decided to put music in a room so that the zombies would not follow them but instead follow the music. This idea would allow them to escape through the roof using ropes so that the zombies would not follow them but instead follow the music. ",
+      options: [['cont','Continue']]
+    },
+
+    cont: {
+      text:"The team told Jack that it was not necessary to get a car anymore since they were not followed by the zombies, and they told him that getting a car would just make a lot of noise which could bring zombies to them. They decided to keep with the mission walking, they found a good building just 10 blocks away from the lab, they decided to spend the rest of the night in there. Now it is 7 in the morning on the 7th day, they started heading to the extraction point, as they started walking they started to see a horde of zombies coming in front of them.",
+      options: [['hide', 'Find a spot and hide until the exit is clear'], ['pushThrough','Push through the horde of zombies']]
+    },
+
+    hide:{
+      text:"The group decided that they would find a spot to hide, and wait for the line of zombies blocking the exit to dissipate. For the first few hours of hiding, everything was going smoothly, but eventually one of the group members began shouting after experiencing a nightmare. The horde heard these shouts, and found them, and then began to tear them to shreds and eat their organs. "
+    },
+
+    pushThrough:{
+      text:"The group decided to face the enemy, they started shooting them, they saw 2 dogs coming at a fast speed, as they were shooting the dogs looked like they were not getting any damage, one of them grabbed a teammate and took him 10 meters away from them. The dog looked like he was trying to take him to the other zombies. The 5 soldiers decided to shoot him in the head simultaneously, that decision did work  and the dog died before causing any harm to their team mate.",
+      options:[['pushLeave','Leave']]
+    },
+
+    pushLeave:{
+      text:"The team was able to eliminate the horde and get to the extraction point, unfortunately one of their members died when a dog zombie came out of nowhere and attacked his throat. After fending off the rest of the zombies, Jack and the survivors found a few cars. The group all went their separate ways, and Jack headed to Jebediah",
+      options:[['jeb','Go see Jebediah']]
+    },
+
+    jeb:{
+      text:"Jack gets in his car and gets on the road, headed to Jebediah. When he reaches Jebediah, he hands it to him, “Here it is boss” he says, “Thank you, Jack” Jebediah says, as he remains in his chair unchanged. “What? Are you expecting a reward? Don\'t forget, you turned down my offer, you should be grateful I gave you a chance to right that wrong, boy.” Jack says nothing in response, staring Jebediah in the eyes, and then promptly leaves. “Time to go home” he tells himself. After countless hours on the road, he finally gets back home, and is overjoyed to see Stacy again “Welcome back!” she says happily. “So, how was it?” “It was a hellhole, everything that used to be there is just rubble now, and the zombies. Seeing those people\'s bodies become a soulless body walking around is the worst feeling I've ever had.” “Jesus” She says shocked in response. They continue to converse about his experience, and then Jack walks upstairs, jumps on the bed and enjoys a well earned rest."
+    },      //^ END OF THE 'DECLINE' BRANCH, ALL FOLLOWING DIALOGUE WILL BE FOR THE 'IGNORE' BRANCH //
+      
+    Ignore:{
+      text:"Jack decides that he is going to ignore the company's offer regarding the mission in NYC. But, he doesn\'t just see this as an odd offer, he senses something weird with this company, and decides to move his family to a different town with the intention of never being contacted by the company again. But, this only manages to work for a little bit, as the company manages to find him, it is unknown how - but Jack gets a knock on the door by some people he has never seen before, but he knows who they are.",
+      options:[['runAway','Run through the backdoor'],['fightOff', 'Fight them off']]
+    },
+    
+    runAway:{
+      text:"Jack runs in the other direction, bolting through the back door out of the house, but they had the house surrounded with people - there was nowhere for him to go, he was trapped. They detain Jack, tying him to a chair, and then someone begins to ask him questions, “So, Jack, why did you move? Needed a change of scenery? Knowing your financial situation, that must\'ve hurt.” “What can I say? I didn\'t like the old neighborhood.” Jack responds, “mmhm” the man grunts “Look pal, you have two choices here, either you can make the right choice and accept this mission, or you can make the stupid choice again and refuse.” “Why do you want me to do this so badly?” Jack asks intently “That's not important. You\'d be saving the world, literally - saying no is like saying you don\'t want humanity to live on.” “So what\'s it gonna be?”",
+      options:[['caveIn','Finally cave in and say yes'],['chadNo','Refuse to accept the offer']]
+    },
+
+    fightOff:{
+      text:"Jack decides to fight the people at the front door, as he doesn’t trust them and thinks they might be dangerous. But there were other people from the company just a few feet away, and although Jack manages to keep them at bay for a while, he is eventually overpowered by them and detained. “Well, you put up a good fight, I’ll give you that” Says the man. “So, Jack, why did you move? Needed a change of scenery? Knowing your financial situation, that must’ve hurt.” “What can I say? I didn’t like the old neighborhood.” Jack responds, “mmhm” the man grunts “Look pal, you have two choices here, either you can make the right choice and accept this mission, or you can make the stupid choice again and refuse.” “Why do you want me to do this so badly?” Jack asks intently “That's not important. You’d be saving the world, literally - saying no is like saying you don’t want humanity to live on.” “So what’s it gonna be?”",
+      options:[['caveIn','Finally cave in and say yes'],['chadNo','Refuse to accept the offer']]
+    },
+
+    caveIn: {
+      text:"Jack replies to the man “Okay fine, I’ll do it. I accept your mission.” Good choice, we will be in contact shortly about the details.” The men cut him free and leave his home. Jack goes to his wife and reassures her about the mission, “I know you don’t want me doing this, but I don’t really have a choice here.” “I know, just be safe, come back to me in one piece.” Jack prepares for the mission, gathering gear he’s acquired over the years, but realizes he doesn’t know anything about NYC or what's really happened there. Jack stumbles upon an article about the ‘recent events in New York City’ that goes in depth regarding what really happened there and caused the current situation in the first place. ",
+      options:[['drive2NYC','Drive to New York City'],['planeRide', 'Take a plane ride to New York City']]
+    },
+
+    chadNo:{
+      text:"Jack replies to the man “There is not a chance in hell that I’m going to accept this mission, EVER.” “Ok.” replies the man “well, just know, you’re the reason that the zombie infection will spread to the rest of the world.” The man cuts Jack free, and all of the company employees leave him, and never contact him again. As time goes on, Jack doesn’t hear anything about NYC or anything related to it for a while. But one day, news sources blow up with new information about how the infection has adapted and now travels by air, meaning the entire world could be affected by it one day. Then, a few days later he hears about cases of people being infected with the virus all over the country, even in California, and eventually his hometown. An antidote hasn’t been created yet, because everyone who gets it is too dangerous to run tests on. Because of Jack's decision, the world is overrun by zombies, and the fate of humanity is simply on a timer."
+    },
+
+    drive2NYC:{
+      text:"Jack decides that he will drive to NYC. “It’s a long trip, but it’ll be relaxing,” he says to himself. Jack sets out for the trip, playing his favorite tunes, and taking his time on his way there. The car ride goes smooth for a long while, but eventually out of nowhere, at an intersection a drunk driver in a semi-truck t-bones his car. The crash instantly kills Jack."
+    },
+
+    planeRide:{
+      text:"Jack decides to take a plane ride to New York and drive the rest of the way into NYC. The plane ride goes smoothly, but at the car rental service, he has some problems getting the desk clerk to get him his car. After an excruciating hour of waiting, he finally gets the car and heads to NYC. Jack finally arrives in NYC and decides that he should get on some high ground to get a good idea of the best path he could take to his destination. After he ascends one of the many ruined buildings in the city, he realizes that he really only has two options, “I either go left or I go right. The left path is shorter, but it's also got a lot more zombie traffic. The right path is longer, but it's got a lot less traffic than the right.”",
+      options:[['leftPath', 'Take the leftward path'], ['rightPath','Take the rightward path']]
+    },
+
+    leftPath:{
+      text:"Jack decides that he is going to go on the left path, although it will be more dangerous, it will be a lot quicker. Jack starts his journey on the leftward path, encountering a lot of zombies in the short amount of time that he has been on it. As he gets farther and farther down the path, he eventually hears whispering coming from an alleyway. Jack decides to investigate the alleyway, and finds that there is a door that leads to what appears to be an old underground night club. He sees some people in there, “Hello, I’m Jack.” he says “Go away” the strangers say in unison “leave us be, we want nothing to do with humanity any more, we want to die peacefully and on our terms.” “So you want to die here?” he asks them “Yes.” “why? Why wouldn't you want to die around other people?” “Because those ‘other people’ abandoned us, including you. They could’ve done something to help us, but they did nothing.” Jack, sensing that these people aren’t going to change their minds, accepts the situation for what it is. ",
+      options:[['keepOnMoving','Keep on Moving']]
+    },
+
+    rightPath:{
+      text:"Jack decides that he is going to pick the rightward path, finding very few zombies on the path. As he gets farther and farther down the path, he eventually hears whispering coming from an alleyway. Jack decides to investigate the alleyway, and finds that there is a door that leads to what appears to be an old underground night club. He sees some people in there, “Hello, I’m Jack.” he says “Go away” the strangers say in unison “leave us be, we want nothing to do with humanity any more, we want to die peacefully and on our terms.” “So you want to die here?” he asks them “Yes.” “why? Why wouldn't you want to die around other people?” “Because those ‘other people’ abandoned us, including you. They could’ve done something to help us, but they did nothing.” Jack, sensing that these people aren’t going to change their minds, accepts the situation for what it is.",
+      options:[['keepOnMoving','Keep on Moving']]
+    },
+    
+    keepOnMoving:{
+      text:"Jack, after returning to the path, keeps moving towards his destination. The usual tendencies on the path resume, Jack sees zombies and shoots them in their face, spreading their brains across the pavement, and getting closer and closer to the item he is on a mission to retrieve. As the time passes, he begins to get a deeper understanding of his surroundings, and a better idea of what happened here. “Everything has gone to crap” he tells himself. At one point it was the world’s most prominent city, booming with businesses, entertainment, and the people. After four long arduous hours, Jack finally manages to reach the building, but as he closes in on it he begins to realize that he has no idea what is really in there, how many zombies are in there, the layout, where this item is, etc. ",
+      options:[['buildingEnter','Enter the building']]
+    },
+
+    buildingEnter:{
+      text:"Jack, after returning to the path, keeps moving towards his destination. The usual tendencies on the path resume, Jack sees zombies and shoots them in their face, spreading their brains across the pavement, and getting closer and closer to the item he is on a mission to retrieve. As the time passes, he begins to get a deeper understanding of his surroundings, and a better idea of what happened here. “Everything has gone to crap” he tells himself. At one point it was the world’s most prominent city, booming with businesses, entertainment, and the people. After four long arduous hours, Jack finally manages to reach the building, but as he closes in on it he begins to realize that he has no idea what is really in there, how many zombies are in there, the layout, where this item is, etc. ",
+      options:[['samePath','Leave using the same path he took'],['diffPath','Leave using the other path']]
+    },
+
+    samePath:{
+      text:"Jack leaves the building and heads towards the exit of the city using the same path that he took in the first place to get there. As he is traveling down the road he sees that there are a lot of zombies that have piled upon the road. “They must have heard my gunshots, or caught wind of my scent.” He says to himself, trying to reason together how they could’ve all been attracted to the same area. He looks behind him, trying to see if he could possibly escape and go the other way, but he is pleasantly surprised by more zombies behind him. He uses the little amount of ammo he has left after his raid of the building. He takes down a few of the brain-munchers, but they overrun him and he dies. "
+    },
+
+    diffPath:{
+      text:"Jack decides that he is going to leave New York City using the other path that he didn’t initially take. He sees that the streets are completely empty, there is not a single zombie in his sight. He walks down the street slowly, trying to attract no attention to himself so that he can get home safe. But, through an alleyway between buildings a zombie sees Jack walking down the street and runs after some, other zombies decide that they’ll follow and chase Jack.",
+      options:[['flare','Distract them with flares'],['outrun','Try to outrun the zombies']]
+    },
+
+    flare:{
+      text:"Jack decides to use a flare to distract the zombies so that he can get away. He realizes that there is no way he will be able to actually outrun the zombies, especially not keep the pace for long enough to live. He lights a flare and throws it into the middle of the street. It works perfectly, as the zombies all surround it, “like a moth to a flame” he says as they swarm the flare. This gives Jack ample time to escape and reach safety.",
+      options:[['mov','Keep moving']]
+    },
+
+    outrun:{
+      text:"Jack tries to outrun the zombies chasing him. He manages to stay ahead of them for a while, but he can’t maintain the speed for long enough, especially with all the gear he's carrying. The zombies swarm him, and enclose him, devouring his flesh, slowly killing him, Jack utters a phrase just before he perishes, “I’m sorry stacy”."
+    },
+
+    mov:{
+      text:"Jack reaches safety, crossing through the city lines and reaching human civilization once again. “Alright, I gotta get this thing to Jebediah, and then get home to Stacy.” he says aloud speaking to himself. Jack gets in his car and gets on the road, headed to Jebediah. When he reaches Jebediah, he hands it to him, “Here it is boss” he says, “Thank you, Jack” Jebediah says, as he remains in his chair unchanged. “What? Are you expecting a reward? Don’t forget, you turned down my offer, you should be grateful I gave you a chance to right that wrong, boy.” Jack says nothing in response, staring Jebediah in the eyes, and then promptly leaves. “Time to go home” he tells himself. After countless hours on the road, he finally gets back home, and is overjoyed to see Stacy again “Welcome back!” she says happily. “So, how was it?” “It was a hellhole, everything that used to be there is just rubble now, and the zombies. Seeing those people’s bodies become a soulless body walking around is the worst feeling I've ever had.” “Jesus” She says shocked in response. They continue to converse about his experience, and then Jack walks upstairs, jumps on the bed and enjoys a well earned rest. ",
+    }
+      // ^ The 'Ignore' branch has been completed//
     };
      
      
@@ -243,7 +355,9 @@ window.onload = function(){
      
     var userOptions = ["opener"];
      
-     
+ 
+    
+    
     var startButton = document.getElementById("startButton");
     var restart = document.getElementById("restart");
     var textArea = document.getElementById("textArea");
@@ -282,7 +396,7 @@ window.onload = function(){
     }
      
     restart.addEventListener("click", function(){
-      location.reload();
+      location.reload()
     });
      
     restart.style.display = 'none';
@@ -305,4 +419,15 @@ window.onload = function(){
       alert("You are leaving this site!")
     });
      
+    if (localStorage) {
+      var visits = localStorage.getItem('visits');
+      if (visits == null) visits = 1;
+    
+      if (visits == 1) console.log("First visit")
+      else console.log('Returning User')
+    
+      localStorage.setItem('visits', visits + 1);
+    
+    }
+
     }
