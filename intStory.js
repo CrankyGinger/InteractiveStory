@@ -335,29 +335,9 @@ window.onload = function(){
       // ^ The 'Ignore' branch has been completed//
     };
      
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
-     
     var userOptions = ["opener"];
      
- 
-    
-    
+
     var startButton = document.getElementById("startButton");
     var restart = document.getElementById("restart");
     var textArea = document.getElementById("textArea");
