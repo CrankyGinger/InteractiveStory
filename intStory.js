@@ -3,7 +3,7 @@ window.onload = function(){
     var story = {
      
     opener: {
-        text: 'Jack Grugg is an ex-marine who served the United States for 8 years. After he returns back home from his nearly decade-long service, he finds that he and his wife Stacy Grugg are in massive amounts of debt, and also have no money. Jack needs to find a job soon if he hopes to maintain the roof over his head. One day, Jack gets an envelope in the mail that has details about a job in New York City(the dead center of the zombie epidemic)that will reward him with a more than generous sum of money that would propel his family out of debt. As he inspects the envelope a little closer, he notices that there is contact information and a website name at the top of the envelope. He and his wife have a discussion about the letter, and she tells him that it is too dangerous.',
+        text: 'Jack Grugg is an ex-marine who served the United States for 8 years. After he returns back home from his nearly decade-long service, he finds that he and his wife Stacy Grugg are in massive amounts of debt, and also have no money. Jack needs to find a job soon if he hopes to maintain the roof over his head. One day, Jack gets an envelope in the mail that has details about a job in New York City (the dead center of the zombie epidemic) that will reward him with a more than generous sum of money that would propel his family out of debt. As he inspects the envelope a little closer, he notices that there is contact information and a website name at the top of the envelope. He and his wife have a discussion about the letter, and she tells him that it is too dangerous.',
         options:[["Accept", "Accept the mission request"], ["initiallyDecline", "Decline the mission request"], ["Ignore", "Ignore the mission request"]]
     },
      
@@ -47,7 +47,7 @@ window.onload = function(){
     },
      
     ignGun: {
-      text: "Jack ignores the gunshot, staying on the path of the mission. He has no intention of staying here any longer than necessary, and he doesn't want to risk getting anyone else killed. He believes he could have saved the other survivors - he wouldn't be able to live with himself if it happened again. “I don\'t wanna have to be responsible for other people.",
+      text: "Jack ignores the gunshot, staying on the path of the mission. He has no intention of staying here any longer than necessary, and he doesn't want to risk getting anyone else killed. He believes he could have saved the other survivors - he wouldn't be able to live with himself if it happened again. \"I don\'t wanna have to be responsible for other people.\"",
       options: [['ignMov', 'Keep on moving']]
     },
      
@@ -72,7 +72,7 @@ window.onload = function(){
     },
      
     ignDispGoHome: {
-      text: "The helicopter brings Jack back to his car outside of the city, where he calls Jebediah and gives him the news. Unlike his Amish brethren, Jebediah screams, “ARE YOU KIDDING ME?” - Jack, stunned by how loud an Amish man can be, stays quiet for a second, contemplating how to respond. He finally says “No, I am not kidding you”. Jebediah in response hung up the phone and practiced the Amish tradition of \'quiet hour\' to calm the soul and keep a level head so that he can run his company effectively. After their conversation, Jack hits the road and goes back home to Stacy. When he finally gets back home, Stacy can tell that something went wrong in NYC just by looking at his face “What happened over there?” she asks, “that thing he wanted me to get, I couldn\'t do it, Stacy, I just couldn\'t.” Stacy, unsure how to respond, just sat there trying to comfort her husband, “It was a vial named \'Zombie virus\', why would he want to get the thing that started this disaster in the first place?” “Whatever the reasoning, I\'m sure it wasn't for a good reason.” Jack, to say the least, was exhausted, when he got to their bedroom he jumped on the bed and fell into a well needed slumber. "
+      text: "The helicopter brings Jack back to his car outside of the city, where he calls Jebediah and gives him the news. Unlike his Amish brethren, Jebediah screams, “ARE YOU KIDDING ME?” - Jack, stunned by how loud an Amish man can be, stays quiet for a second, contemplating how to respond. He finally says “No, I am not kidding you.” Jebediah in response hung up the phone and practiced the Amish tradition of \'quiet hour\' to calm the soul and keep a level head so that he can run his company effectively. After their conversation, Jack hits the road and goes back home to Stacy. When he finally gets back home, Stacy can tell that something went wrong in NYC just by looking at his face “What happened over there?” she asks, “that thing he wanted me to get, I couldn\'t do it, Stacy, I just couldn\'t.” Stacy, unsure how to respond, just sat there trying to comfort her husband, “It was a vial named \'Zombie virus\', why would he want to get the thing that started this disaster in the first place?” “Whatever the reasoning, I\'m sure it wasn't for a good reason.” Jack, to say the least, was exhausted, when he got to their bedroom he jumped on the bed and fell into a well needed slumber. "
     },
      
     ignKeep:{
@@ -90,7 +90,7 @@ window.onload = function(){
     },
 
     invGun: {
-      text: "Jack decides that he should move in the direction of the gunshots, “gunshots mean survivors*/s he says to himself. The idea of there being people who have been hiding in this hell hole for however long it's been since the virus broke out in NYC. As Jack is moving in the direction of the shots, the time in between shots keeps getting smaller and smaller. “Somethings happening” Jack mutters through his lips. Jack finally reaches the area the shots are coming from and realizes something, those people are at the top of the empire state building. Ascending this building is going to take a long time, and he doesn\'t know how many of the undead could be inside the building, or if the staircase is intact anymore; Jack would essentially be heading in completely blind. ",
+      text: "Jack decides that he should move in the direction of the gunshots, \"gunshots mean survivors\'s\"  he says to himself. \"The idea of there being people who have been hiding in this hell hole for however long it's been since the virus broke out in NYC is just horrible.\" As Jack is moving in the direction of the shots, the time in between shots keeps getting smaller and smaller. “Somethings happening” Jack mutters through his lips. Jack finally reaches the area the shots are coming from and realizes something, those people are at the top of the empire state building. Ascending this building is going to take a long time, and he doesn\'t know how many of the undead could be inside the building, or if the staircase is intact anymore; Jack would essentially be heading in completely blind. ",
       options: [['Ascend', 'Ascend the building'], ['noAscend', "Don't ascend the building"]]
     },
 
@@ -120,7 +120,7 @@ window.onload = function(){
     },
 
     invKeep: {
-      text:"Jack makes the decision to keep the virus and put it in his backpack. They make their way out of the building, walking through the mess left by their previous battle. “What now” “Now we leave this godforsaken city and live our lives” says Jack “but i\'ve never left this city, its all ive ever known” Diane replies sadly “anything is better than this shithole we\'re currently in, even if you feel alienated.” Jimbob responds “Alright, we need to go through the Lincoln tunnel, it's our fastest way out of here” commands jack. They all agree with him, every other exit out of NYC is too far away, and they don't have enough supplies to go anywhere else. They make their way to the tunnel, keeping quiet to attract as little attention as possible, but as they get closer they realize something that they had all feared. A mob had formed just before the tunnel entrance, effectively forming a barrice, preventing anyone or anything getting through to the other side. Unfortunately they all knew the same thing - they do not have enough ammo to eliminate this huge throng of zombies, someone needs to do something.",
+      text:"Jack makes the decision to keep the virus and put it in his backpack. They make their way out of the building, walking through the mess left by their previous battle. “What now?” “Now we leave this godforsaken city and live our lives” says Jack, “but i\'ve never left this city, its all ive ever known” Diane replies sadly “anything is better than this shithole we\'re currently in, even if you feel alienated.” Jimbob responds “Alright, we need to go through the Lincoln tunnel, it's our fastest way out of here” commands jack. They all agree with him, every other exit out of NYC is too far away, and they don't have enough supplies to go anywhere else. They make their way to the tunnel, keeping quiet to attract as little attention as possible, but as they get closer they realize something that they had all feared. A mob had formed just before the tunnel entrance, effectively forming a barricade, preventing anyone or anything getting through to the other side. Unfortunately they all came to the same realization - they do not have enough ammo to eliminate this huge throng of zombies, someone needs to do something.",
       options: [['invDistAlone',"Distract the horde alone"], ['invGroupDist', 'The group distracts the horde']]
     },
 
@@ -274,7 +274,7 @@ window.onload = function(){
     },
 
     caveIn: {
-      text:"Jack replies to the man “Okay fine, I\'ll do it. I accept your mission.” Good choice, we will be in contact shortly about the details.” The men cut him free and leave his home. Jack goes to his wife and reassures her about the mission, “I know you don\'t want me doing this, but I don\'t really have a choice here.” “I know, just be safe, come back to me in one piece.” Jack prepares for the mission, gathering gear he\'s acquired over the years, but realizes he doesn\'t know anything about NYC or what's really happened there. Jack stumbles upon an article about the \'recent events in New York City\' that goes in depth regarding what really happened there and caused the current situation in the first place. ",
+      text:"Jack replies to the man “Okay fine, I\'ll do it. I accept your mission.”  \"Good choice, we will be in contact shortly about the details.\" The men cut him free and leave his home. Jack goes to his wife and reassures her about the mission, “I know you don\'t want me doing this, but I don\'t really have a choice here.” “I know, just be safe, come back to me in one piece.” Jack prepares for the mission, gathering gear he\'s acquired over the years, but realizes he doesn\'t know anything about NYC or what's really happened there. Jack stumbles upon an article about the \'recent events in New York City\' that goes in depth regarding what really happened there and caused the current situation in the first place. ",
       options:[['drive2NYC','Drive to New York City'],['planeRide', 'Take a plane ride to New York City']]
     },
 
@@ -346,9 +346,15 @@ window.onload = function(){
     var profile1 = document.getElementById("profile1");
     var profile2 = document.getElementById("profile2");
      
-    function makeBTN(buttonText, option) {
-      var button = document.createElement("button");
-      button.innerHTML = buttonText;
+    // Grabs all necessary elements from HTML for the game
+
+    restart.style.display = 'none'; 
+
+    // Hides 'restart' button when website is first opened
+    
+    function makeBTN(btnText, option) {
+      var button = document.createElement("button"); // Creates story choices for the user
+      button.innerHTML = btnText;
       btnArea.appendChild(button);
      
       button.addEventListener("click", function(){
@@ -379,32 +385,32 @@ window.onload = function(){
       location.reload()
     });
      
-    restart.style.display = 'none';
+   
      
     startButton.addEventListener("click", function(){
-      writeStory(story.opener.text);
-      restart.style.display = '';
+      writeStory(story.text);
+      restart.style.display = ''; // enables start button to be displayed on the DOM
     });
      
      
-    repolink.addEventListener("click", function(){
+    repolink.addEventListener("click", function(){ // Displays alert upon link being clicked
         alert("You are leaving this site!")
     });
      
-    profile1.addEventListener("click", function(){
+    profile1.addEventListener("click", function(){  // Displays alert upon link being clicked
       alert("You are leaving this site!")
     });
      
-    profile2.addEventListener("click", function(){
+    profile2.addEventListener("click", function(){  // Displays alert upon link being clicked
       alert("You are leaving this site!")
     });
      
-    if (localStorage) {
+    if (localStorage) { // Logs to the console how many times the user has visited the site
       var visits = localStorage.getItem('visits');
       if (visits == null) visits = 1;
     
-      if (visits == 1) console.log("First visit")
-      else console.log('Returning User')
+      if (visits == 1) console.log("First time user")
+      else console.log(`User has visited  ${visits}  times`)
     
       localStorage.setItem('visits', visits + 1);
     
