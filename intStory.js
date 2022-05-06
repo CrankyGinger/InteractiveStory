@@ -2,7 +2,7 @@ window.onload = function(){
  
     var story = {
      
-    opener: {
+    intro: {
         text: 'Jack Grugg is an ex-marine who served the United States for 8 years. After he returns back home from his nearly decade-long service, he finds that he and his wife Stacy Grugg are in massive amounts of debt, and also have no money. Jack needs to find a job soon if he hopes to maintain the roof over his head. One day, Jack gets an envelope in the mail that has details about a job in New York City (the dead center of the zombie epidemic) that will reward him with a more than generous sum of money that would propel his family out of debt. As he inspects the envelope a little closer, he notices that there is contact information and a website name at the top of the envelope. He and his wife have a discussion about the letter, and she tells him that it is too dangerous.',
         options:[["Accept", "Accept the mission request"], ["initiallyDecline", "Decline the mission request"], ["Ignore", "Ignore the mission request"]]
     },
@@ -105,7 +105,7 @@ window.onload = function(){
     },
 
     talkToSrvrs: {
-      text:"He climbs the stairwell, avoiding stepping on top of the corpses and knocks on the 2 inch thick titanium door. After a few minutes, there was no response from the other side, “Hello, is anyone alive in there?” asks Jack, again no response. “I don\'t want to hurt you, I just wanna see if you\'re alright” Jack says honestly “Alright, I\'m gonna open this door, if you try anything I\'ll blow your brains sky high!” says a stranger who sounds hostile, but also desperate. As the door opens, he sees three people huddled together with their guns aimed at Jack's face “Who are you and why are you here?” asks the same man, “I heard gunshots when I was walking through the street and came over here to check for survivors” \'No, why are you in NYC? It's infested with those walkers” ''Walkers?” “Yea, those undead scoundrels walking around like they own the place.” “Well they do own the place.” Jack looks from one side of the room to another, scanning his environment, he sees that they are running low on ammo, based on how empty the ammo boxes look. They\'re also extremely low on food, Jack deduces after looking at the few cans of cut up fruit they have left. “I\'m on a mission to retrieve an item from the Morgan Library” The group to say the least was confused, but they started whispering to each other about the situation and said to Jack, 'We want to come with you'",
+      text:"He climbs the stairwell, avoiding stepping on top of the corpses and knocks on the 2 inch thick titanium door. After a few minutes, there was no response from the other side, “Hello, is anyone alive in there?” asks Jack, again no response. “I don\'t want to hurt you, I just wanna see if you\'re alright” Jack says honestly “Alright, I\'m gonna open this door, if you try anything I\'ll blow your brains sky high!” says a stranger who sounds hostile, but also desperate. As the door opens, he sees three people huddled together with their guns aimed at Jack's face “Who are you and why are you here?” asks the same man, “I heard gunshots when I was walking through the street and came over here to check for survivors” \'No, why are you in NYC? It's infested with those walkers” ''Walkers?” “Yea, those undead scoundrels walking around like they own the place.” “Well they do own the place.” Jack looks from one side of the room to another, scanning his environment, he sees that they are running low on ammo, based on how empty the ammo boxes look. They\'re also extremely low on food, Jack deduces after looking at the few cans of cut up fruit they have left. “I\'m on a mission to retrieve an item from the Morgan Library” The group to say the least was confused, but they started whispering to each other about the situation and said to Jack, \"We want to come with you\"",
       options:[['bringGroup','Bring the group with you']]
     },
 
@@ -335,7 +335,9 @@ window.onload = function(){
       // ^ The 'Ignore' branch has been completed//
     };
      
-    var userOptions = ["opener"];
+    var userOptions = ["intro"];
+
+
      
 
     var startButton = document.getElementById("startButton");
@@ -358,9 +360,8 @@ window.onload = function(){
       btnArea.appendChild(button);
      
       button.addEventListener("click", function(){
-        userOptions.push(option);
+        userOptions.push(option); // Adds clicked buttons to the userOptions array
         writeStory();
-        window.scrollTo({ top: 0, behavior: 'smooth' });
       });
     }
      
@@ -405,14 +406,14 @@ window.onload = function(){
       alert("You are leaving this site!")
     });
      
-    if (localStorage) { // Logs to the console how many times the user has visited the site
+    if (localStorage) { // Logs to the console whether or not user is a first time user or a returning user
       var visits = localStorage.getItem('visits');
       if (visits == null) visits = 1;
     
       if (visits == 1) console.log("First time user")
-      else console.log(`User has visited  ${visits}  times`)
+      else console.log(`Returning user`)
     
-      localStorage.setItem('visits', visits + 1);
+      localStorage.setItem('visits', visits);
     
     }
 

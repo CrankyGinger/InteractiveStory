@@ -4,12 +4,14 @@
 }
  
 body{
-   margin: 0 auto;
+   margin: auto ;
    box-sizing: border-box;
    background-color: #4b5320;
    width: 85%;
    height: fit-content;
 }
+
+
  
 h1{
     text-align: center;
@@ -155,3 +157,55 @@ a:active{
     font-weight: normal;
 }
 
+@media screen and (max-width:1024px){ 
+
+#textArea{
+    font-size: medium;
+    width:80%;
+
+}
+
+}
+
+ @media screen and (max-width:650px){ 
+
+#textArea{
+    font-size: small;
+    text-align: center;
+}
+
+}
+
+@media screen and (max-width:484px){
+
+#textArea{
+    font-size:small;
+    width: 85%;
+    text-align: center;
+}
+
+#resetButton{
+    width: 45%;
+}
+
+#restart{
+    font-size: medium;
+    
+}
+
+#btnArea{
+    align-content: space-around;
+    justify-content: space-around;
+    display: flex;
+}
+
+button{
+    width: auto;
+    font-size: small;
+}
+
+#restart:hover{
+    width:46% ;
+}
+
+}
